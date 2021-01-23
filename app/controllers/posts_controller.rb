@@ -54,7 +54,7 @@ class PostsController < ApplicationController
 
   private
     def is_authorized?
-      @post.user = @user
+      @post.user == @user
     end
 
     def render_not_authorized_user
